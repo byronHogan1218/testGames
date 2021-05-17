@@ -11,19 +11,19 @@ public class CollectableManager : MonoBehaviour {
         }
     }
 
-    private bool isMaxReached() {
+    private bool IsMaxReached() {
         return currentAmount >= maxCollectable;
     }
 
-    public void addOne() {
+    public void AddOne() {
         currentAmount++;
-        if (isMaxReached()) {
+        if (IsMaxReached()) {
             //Call game over here
             print("The game is over");
         }
     }
 
-    public int getCurrentAmount() {
+    public int GetCurrentAmount() {
         return currentAmount;
     }
 }
