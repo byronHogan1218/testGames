@@ -3,6 +3,7 @@
 public class CollectableManager : MonoBehaviour {
     public int maxCollectable = 1;
     private int currentAmount = 0;
+    private PlayerUI playerUI;
 
     void Start() {
         currentAmount = 0;
@@ -17,8 +18,22 @@ public class CollectableManager : MonoBehaviour {
 
     public void AddOne() {
         currentAmount++;
+        // The player is created on the start of the game, so we need ot find the UI in runtime
+        if (playerUI == null) {
+            playerUI = GameObject.FindGameObjectWithTag(Constants.PLAYER_TAG).GetComponentInChildren<PlayerUI>();
+            playerUI.UpdateCollection(currentAmount, maxCollectable);
+        } else {
+            playerUI.UpdateCollection(currentAmount, maxCollectable);
+        }
         if (IsMaxReached()) {
-            //Call game over here
+            // The player is created on the start of the game, so we need ot find the UI in runtime
+            if (playerUI == null) {
+                playerUI = GameObject.FindGameObjectWithTag(Constants.PLAYER_TAG).GetComponentInChildren<PlayerUI>();
+                playerUI.ShowWinScreen();
+
+            } else {
+                playerUI.ShowWinScreen();
+            }
             print("The game is over");
         }
     }
