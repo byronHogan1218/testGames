@@ -6,7 +6,12 @@ public class MainMenu : MonoBehaviour {
         SceneManager.LoadScene(Constants.LEVEL_SELECTOR_SCENE);
     }
 
+    public void LoadMainMenu() {
+        SceneManager.LoadScene(Constants.MAIN_MENU_SCENE);
+    }
+
     public void QuitGame() {
+        print("Quitting");
         Application.Quit();
     }
 }
