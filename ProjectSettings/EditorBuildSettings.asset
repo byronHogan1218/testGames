@@ -11,4 +11,34 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/LevelSelect.unity
     guid: d7c6f9d878f0f9e45bc51d2b7a1405c1
+  - enabled: 1
+    path: Assets/Scenes/Collect_Level_5.unity
+    guid: 5f8b708f0df1ce140a789bbdee30dee6
+  - enabled: 1
+    path: Assets/Scenes/Collect_Level_4.unity
+    guid: 112847df43cf3e3438af9f413c7b6fd2
+  - enabled: 1
+    path: Assets/Scenes/Collect_Level_3.unity
+    guid: 20eabd858c197174ab1680c953c86cc9
+  - enabled: 1
+    path: Assets/Scenes/Collect_Level_2.unity
+    guid: 500fcbc09ca583844835624045c873bf
+  - enabled: 1
+    path: Assets/Scenes/Collect_Level_1.unity
+    guid: f3a0e28167de8f84098dfdb40d129872
+  - enabled: 1
+    path: Assets/Scenes/Obstacle_Level_5.unity
+    guid: 04e57337f74b7e3439ecf9357613da00
+  - enabled: 1
+    path: Assets/Scenes/Obstacle_Level_4.unity
+    guid: c2a63aba718b4784e88f3bad5251ca09
+  - enabled: 1
+    path: Assets/Scenes/Obstacle_Level_3.unity
+    guid: 064a528e94966c543ae98e17890f1628
+  - enabled: 1
+    path: Assets/Scenes/Obstacle_Level_2.unity
+    guid: b2aedbc5dbc749c43ad61ee4a848b8dd
+  - enabled: 1
+    path: Assets/Scenes/Obstacle_Level_1.unity
+    guid: b6945f2c2ad6b184198c6448f6836f6b
   m_configObjects: {}
